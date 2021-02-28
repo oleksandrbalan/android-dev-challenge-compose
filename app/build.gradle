@@ -38,6 +38,9 @@ android {
 
     kotlinOptions {
         jvmTarget = "1.8"
+
+        // Opt-in ExperimentalAnimationApi
+        freeCompilerArgs += "-Xopt-in=androidx.compose.animation.ExperimentalAnimationApi"
     }
 
     buildFeatures {
@@ -73,6 +76,10 @@ dependencies {
     implementation "androidx.compose.material:material-icons-extended:$compose_version"
     implementation "androidx.compose.ui:ui-tooling:$compose_version"
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.0'
+
+    implementation "androidx.navigation:navigation-compose:1.0.0-alpha08"
+
+    implementation "dev.chrisbanes.accompanist:accompanist-coil:0.6.0"
 
     testImplementation 'junit:junit:4.13.2'
 
