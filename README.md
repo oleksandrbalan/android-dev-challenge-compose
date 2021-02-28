@@ -17,8 +17,6 @@ Design is inspired with [this dribble](https://dribbble.com/shots/5967252-Tab-Ba
 ## :camera_flash: Screenshots
 <img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
-https://user-images.githubusercontent.com/20944869/109406559-4ffec600-797a-11eb-83a4-9efac1369329.mp4
-
 
 ## License
 ```
