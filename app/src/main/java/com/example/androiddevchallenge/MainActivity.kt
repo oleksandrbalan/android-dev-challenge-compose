@@ -27,21 +27,21 @@ import com.example.androiddevchallenge.overview.PetsOverview
 import com.example.androiddevchallenge.ui.theme.JetPawTheme
 
 class MainActivity : AppCompatActivity() {
-	override fun onCreate(savedInstanceState: Bundle?) {
-		super.onCreate(savedInstanceState)
-		setContent {
-			JetPawTheme {
-				val navController = rememberNavController()
-				NavHost(navController, startDestination = Navigation.overview) {
-					composable(Navigation.overview) { PetsOverview(navController) }
-					composable(Navigation.detail) {
-						val id = it.arguments?.getString(Navigation.detailPetId)
-						val pet = MockData.pets.find { it.id == id }
-							?: error("No pet found with id $id")
-						PetDetail(navController, pet)
-					}
-				}
-			}
-		}
-	}
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            JetPawTheme {
+                val navController = rememberNavController()
+                NavHost(navController, startDestination = Navigation.overview) {
+                    composable(Navigation.overview) { PetsOverview(navController) }
+                    composable(Navigation.detail) {
+                        val id = it.arguments?.getString(Navigation.detailPetId)
+                        val pet = MockData.pets.find { it.id == id }
+                            ?: error("No pet found with id $id")
+                        PetDetail(navController, pet)
+                    }
+                }
+            }
+        }
+    }
 }
