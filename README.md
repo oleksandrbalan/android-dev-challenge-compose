@@ -11,11 +11,14 @@ Includes a list with dogs and cats from https://www.petfinder.com/, also has bri
 ## :bulb: Motivation and Context
 
 On the list screen there is a fancy bottom bar to switch between dogs and cats.
-Design is inspired with [this dribble](https://dribbble.com/shots/5967252-Tab-Bar-Animation)
+Design is inspired with [this dribble](https://dribbble.com/shots/5967252-Tab-Bar-Animation).
 
 ## :camera_flash: Screenshots
 <img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
+## :art: Icons
+
+Icons made by https://www.freepik.com and "Those Icons" from https://www.flaticon.com/.
 
 ## License
 ```
